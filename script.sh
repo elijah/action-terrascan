@@ -42,7 +42,7 @@ terrascan scan \
   $(if [[ "x${TERRASCAN_REMOTE_URL}" != "x" ]]; then echo "--remote-url ${TERRASCAN_REMOTE_URL}"; fi) \
   $(if [[ "x${TERRASCAN_SCAN_RULES}" != "x" ]]; then echo "--scan-rules ${TERRASCAN_SCAN_RULES}"; fi) \
   $(if [[ "x${TERRASCAN_SEVERITY}" != "x" ]]; then echo "--severity ${TERRASCAN_SEVERITY}"; fi) \
-  $(if [[ "x${TERRASCAN_SKIP_RULES}" != "x" ]]; then echo "--skip-rules ${TERRASCAN_SKIP-RULES}"; fi) \
+  $(if [[ "x${TERRASCAN_SKIP_RULES}" != "x" ]]; then echo "--skip-rules ${TERRASCAN_SKIP_RULES}"; fi) \
   $(if [[ "x${TERRASCAN_USE_COLORS}" != "x" ]]; then echo "--use-colors ${TERRASCAN_USE_COLORS}"; fi) \
   $(if [[ "x${TERRASCAN_VERBOSE}" != "x" ]]; then echo "--verbose"; fi) |
   tee "$scan_results"
